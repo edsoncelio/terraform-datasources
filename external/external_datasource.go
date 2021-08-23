@@ -20,7 +20,6 @@ func main() {
 	var outputQuery OutputQuery
 
 	err := json.NewDecoder(os.Stdin).Decode(&inputQuery)
-	//json.Unmarshal([]byte(inputQuery.Query), &outputQuery)
 	if err != nil {
 		log.Fatal(err)
 	}
